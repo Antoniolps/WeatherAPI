@@ -12,7 +12,7 @@ public class WeatherClientFallback implements WeatherClient {
     public WeatherResponse getCurrentWeather(String city, String apiKey, String units, String lang) {
         WeatherResponse response = new WeatherResponse();
         Main main = new Main();
-        main.setTemperature(0.0);
+        main.setTemp(0.0);
         main.setHumidity(0.0);
 
         Weather weather = new Weather();
